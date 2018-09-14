@@ -21,10 +21,10 @@ Product page: [BFS-U3-31S4C-C](https://www.ptgrey.com/blackfly-s-color-32-mp-usb
 
 #### Step III: Install Spinnaker SDK 1.13
 1. Navigate to the folder where you extracted the SDK files in Step I.7 above: `cd ~/Downloads/spinnaker-1.13.0.31-amd64`
-2. Run the install script: `sudo sh install_spinnaker.sh`. Answer 'yes' `y` to all the prompts during the install process.
+2. Run the install script: `sudo sh install_spinnaker.sh`. Answer 'yes' `y` to all the prompts during the install process. When prompted for a username to add to the flir group, enter your respective username. Default is `user1`.
 3. Once complete, connect the camera to a USB3.0 port and test installation by typing `spinview` in the terminal. If Spinnaker SDK was successfully installed, a GUI will open with a list of cameras detected. Click on the BFS camera and then on the green play button to view live feed. Make note of the camera's Serial number (Ex: 18284612).
 
-#### Step IV: Install ROS Wrapper for Spinnaker SDK [ref](http://wiki.ros.org/spinnaker_sdk_camera_driver)
+#### Step IV: Install ROS Wrapper for Spinnaker SDK [[ref]](http://wiki.ros.org/spinnaker_sdk_camera_driver)
 1. Run command: `sudo apt install libunwind-dev ros-kinetic-cv-bridge ros-kinetic-image-transport`
 2. Navigate to the src folder of your catkin workspace: `cd ~/catkin_ws/src`
 3. Clone this repository: `git clone https://github.com/neufieldrobotics/spinnaker_sdk_camera_driver.git`
